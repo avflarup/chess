@@ -1,0 +1,50 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="800"
+        x:Class="Chess.UI.MainWindow"
+        Title="Chess"
+        Background="Black">
+    <Grid>
+        <DockPanel Margin="8" Background="Black">
+            <StackPanel DockPanel.Dock="Top" Orientation="Horizontal" Spacing="8" VerticalAlignment="Center">
+                <TextBlock Name="StatusTextBlock" FontSize="18" Foreground="White" VerticalAlignment="Center" />
+                <Button Name="ResetButton" Content="New Game" Click="ResetButton_Click" HorizontalAlignment="Left" />
+                <Button Name="RotateBoardButton" Content="Rotate Board" Click="RotateBoardButton_Click" HorizontalAlignment="Left" />
+            </StackPanel>
+
+            <Border HorizontalAlignment="Center" VerticalAlignment="Center" Background="Black" CornerRadius="6" Padding="8">
+                <UniformGrid Name="BoardGrid" Rows="8" Columns="8" Width="640" Height="640" />
+            </Border>
+        </DockPanel>
+
+        <Border Name="VictoryOverlay"
+                Background="#CC000000"
+                IsVisible="False"
+                CornerRadius="8"
+                Padding="24"
+                Margin="24"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center">
+            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Spacing="16">
+                <TextBlock Name="VictoryTitleTextBlock"
+                           Text="Checkmate"
+                           FontSize="32"
+                           FontWeight="Bold"
+                           Foreground="White"
+                           HorizontalAlignment="Center" />
+                <TextBlock Name="VictoryMessageTextBlock"
+                           Text="White wins!"
+                           FontSize="20"
+                           Foreground="White"
+                           HorizontalAlignment="Center" />
+                <Button Content="New Game"
+                        Click="ResetButton_Click"
+                        HorizontalAlignment="Center"
+                        Width="150"
+                        Margin="0,8,0,0" />
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>

@@ -1,0 +1,140 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/andreas/Documents/Projects/chess/Chess.UI/Chess.UI.csproj": {}
+  },
+  "projects": {
+    "/home/andreas/Documents/Projects/chess/Chess.Core/Chess.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/andreas/Documents/Projects/chess/Chess.Core/Chess.Core.csproj",
+        "projectName": "Chess.Core",
+        "projectPath": "/home/andreas/Documents/Projects/chess/Chess.Core/Chess.Core.csproj",
+        "packagesPath": "/home/andreas/.nuget/packages/",
+        "outputPath": "/home/andreas/Documents/Projects/chess/Chess.Core/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/andreas/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.122/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/andreas/Documents/Projects/chess/Chess.UI/Chess.UI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/andreas/Documents/Projects/chess/Chess.UI/Chess.UI.csproj",
+        "projectName": "Chess.UI",
+        "projectPath": "/home/andreas/Documents/Projects/chess/Chess.UI/Chess.UI.csproj",
+        "packagesPath": "/home/andreas/.nuget/packages/",
+        "outputPath": "/home/andreas/Documents/Projects/chess/Chess.UI/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/andreas/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/home/andreas/Documents/Projects/chess/Chess.Core/Chess.Core.csproj": {
+                "projectPath": "/home/andreas/Documents/Projects/chess/Chess.Core/Chess.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Avalonia": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "Avalonia.Desktop": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "Avalonia.Fonts.Inter": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "Avalonia.Themes.Fluent": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "AvaloniaUI.DiagnosticsSupport": {
+              "target": "Package",
+              "version": "[2.2.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.122/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

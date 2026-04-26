@@ -1,0 +1,11 @@
+/home/andreas/Documents/Projects/chess/Chess.Core/bin/Debug/net8.0/Chess.Core.deps.json
+/home/andreas/Documents/Projects/chess/Chess.Core/bin/Debug/net8.0/Chess.Core.dll
+/home/andreas/Documents/Projects/chess/Chess.Core/bin/Debug/net8.0/Chess.Core.pdb
+/home/andreas/Documents/Projects/chess/Chess.Core/obj/Debug/net8.0/Chess.Core.GeneratedMSBuildEditorConfig.editorconfig
+/home/andreas/Documents/Projects/chess/Chess.Core/obj/Debug/net8.0/Chess.Core.AssemblyInfoInputs.cache
+/home/andreas/Documents/Projects/chess/Chess.Core/obj/Debug/net8.0/Chess.Core.AssemblyInfo.cs
+/home/andreas/Documents/Projects/chess/Chess.Core/obj/Debug/net8.0/Chess.Core.csproj.CoreCompileInputs.cache
+/home/andreas/Documents/Projects/chess/Chess.Core/obj/Debug/net8.0/Chess.Core.dll
+/home/andreas/Documents/Projects/chess/Chess.Core/obj/Debug/net8.0/refint/Chess.Core.dll
+/home/andreas/Documents/Projects/chess/Chess.Core/obj/Debug/net8.0/Chess.Core.pdb
+/home/andreas/Documents/Projects/chess/Chess.Core/obj/Debug/net8.0/ref/Chess.Core.dll
