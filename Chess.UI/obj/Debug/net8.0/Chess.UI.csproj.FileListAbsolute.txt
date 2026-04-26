@@ -90,3 +90,4 @@
 /home/andreas/Documents/Projects/chess/Chess.UI/obj/Debug/net8.0/Chess.UI.pdb
 /home/andreas/Documents/Projects/chess/Chess.UI/obj/Debug/net8.0/Chess.UI.genruntimeconfig.cache
 /home/andreas/Documents/Projects/chess/Chess.UI/obj/Debug/net8.0/ref/Chess.UI.dll
+/home/andreas/Documents/Projects/chess/Chess.UI/obj/Debug/net8.0/Chess.UI.sourcelink.json

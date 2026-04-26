@@ -165,6 +165,28 @@ public sealed class Board
         return true;
     }
 
+    public bool IsStalemate(PieceColor color)
+    {
+        if (IsInCheck(color))
+            return false;
+
+        foreach (var kvp in _pieces.Where(kvp => kvp.Value.Color == color))
+        {
+            var from = kvp.Key;
+            for (char file = 'a'; file <= 'h'; file++)
+            {
+                for (int rank = 1; rank <= 8; rank++)
+                {
+                    var to = new Position(file, rank);
+                    if (IsLegalMove(from, to))
+                        return false;
+                }
+            }
+        }
+
+        return true;
+    }
+
     private static bool IsLinearMove(Position from, Position to)
     {
         return from.File == to.File || from.Rank == to.Rank;

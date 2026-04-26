@@ -9,3 +9,4 @@
 /home/andreas/Documents/Projects/chess/Chess.Core/obj/Debug/net8.0/refint/Chess.Core.dll
 /home/andreas/Documents/Projects/chess/Chess.Core/obj/Debug/net8.0/Chess.Core.pdb
 /home/andreas/Documents/Projects/chess/Chess.Core/obj/Debug/net8.0/ref/Chess.Core.dll
+/home/andreas/Documents/Projects/chess/Chess.Core/obj/Debug/net8.0/Chess.Core.sourcelink.json

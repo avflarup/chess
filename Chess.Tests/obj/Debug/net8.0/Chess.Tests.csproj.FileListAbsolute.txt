@@ -99,3 +99,4 @@
 /home/andreas/Documents/Projects/chess/Chess.Tests/obj/Debug/net8.0/Chess.Tests.pdb
 /home/andreas/Documents/Projects/chess/Chess.Tests/obj/Debug/net8.0/Chess.Tests.genruntimeconfig.cache
 /home/andreas/Documents/Projects/chess/Chess.Tests/obj/Debug/net8.0/ref/Chess.Tests.dll
+/home/andreas/Documents/Projects/chess/Chess.Tests/obj/Debug/net8.0/Chess.Tests.sourcelink.json

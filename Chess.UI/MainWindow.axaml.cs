@@ -8,6 +8,12 @@ using Chess.Core;
 
 namespace Chess.UI;
 
+public enum GameOverReason
+{
+    Checkmate,
+    Stalemate
+}
+
 public partial class MainWindow : Window
 {
     private readonly Button[,] _squareButtons = new Button[8, 8];
@@ -171,7 +177,11 @@ public partial class MainWindow : Window
 
             if (_board.IsCheckmate(_board.CurrentTurn))
             {
-                ShowVictoryOverlay(GetOpponent(_board.CurrentTurn));
+                ShowGameOverScreen(GameOverReason.Checkmate, GetOpponent(_board.CurrentTurn));
+            }
+            else if (_board.IsStalemate(_board.CurrentTurn))
+            {
+                ShowGameOverScreen(GameOverReason.Stalemate, null);
             }
             else
             {
@@ -196,7 +206,7 @@ public partial class MainWindow : Window
         SetStatus($"Board rotated. {_board.CurrentTurn} to move.");
     }
 
-    private void ShowVictoryOverlay(PieceColor winner)
+    private void ShowGameOverScreen(GameOverReason reason, PieceColor? winner)
     {
         _isGameOver = true;
 
@@ -204,9 +214,16 @@ public partial class MainWindow : Window
             _victoryOverlay.IsVisible = true;
 
         if (_victoryMessageTextBlock is not null)
-            _victoryMessageTextBlock.Text = winner == PieceColor.White ? "White wins by checkmate!" : "Black wins by checkmate!";
+        {
+            _victoryMessageTextBlock.Text = reason switch
+            {
+                GameOverReason.Checkmate => winner == PieceColor.White ? "White wins by checkmate!" : "Black wins by checkmate!",
+                GameOverReason.Stalemate => "Game drawn by stalemate!",
+                _ => "Game Over"
+            };
+        }
 
-        SetStatus("Checkmate!");
+        SetStatus(reason == GameOverReason.Checkmate ? "Checkmate!" : "Stalemate!");
     }
 
     private void HideVictoryOverlay()
